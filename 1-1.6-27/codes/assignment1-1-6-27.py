@@ -27,7 +27,7 @@ zbc = data['zbc']
 xca = data['xca']
 yca = data['yca']
 zca = data['zca']
-#Given points
+
 A = np.array(([xab[0], yab[0],zab[0]])).reshape(-1,1) 
 B = np.array(([xbc[0], ybc[0],zbc[0]])).reshape(-1,1) 
 C = np.array(([xca[0], yca[0],zca[0]])).reshape(-1,1) 
