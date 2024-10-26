@@ -1,0 +1,233 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{amsmath}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{1.1.6.27}
+\author{EE24BTECH11057 - SHIVAM SHILVANT*
+}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+\begin{enumerate}
+\setcounter{enumi}{9}
+
+\item A plain carbon steel was annealed just above the eutectoid temperature. Microstructural analysis revealed that the proeutectoid ferrite content was 30 wt \% .The eutectoid reaction in the iron-iron carbide phase diagram is given below :
+
+\begin{center}
+    $\gamma\brak{0.76\ wt\% \ C}$ $\xrightleftharpoons[\text{heating}]{\text{cooling}}$ 
+    $\alpha\brak{0.022\ \text{wt}\%\ \text{C}} + \text{Fe}  _3\text{C} \brak{6.7\ \text{wt}\% \ \text{C} }$
+\end{center} 
+
+The carbon content of the steel $\brak{\text{in wt}\%}$ is
+\begin{multicols}{4}
+\begin{enumerate}
+    \item $0.24$
+    \item $0.34$
+    \item $0.44$
+    \item $0.54$
+\end{enumerate}
+\end{multicols}
+
+\item Match the materials in \textbf{Column-I}with the descriptions in \textbf{Column-II}.
+\begin{table}[h]
+    \centering
+    \input{tables/table1.tex}
+    \label{tab:my_label}
+\end{table}
+\begin{multicols}{2}
+\begin{enumerate}
+    \item P-3, Q-4, R-1, S-2
+    \item P-6, Q-1, R-4, S-2
+    \item P-3, Q-1, R-4, S-5
+    \item P-4, Q-6, R-1, S-5
+\end{enumerate}
+\end{multicols}
+
+\item Match the materials in \textbf{Column-I}with the descriptions in \textbf{Column-II}.
+\begin{table}[h]
+    \centering
+    \input{tables/table2.tex}
+    \label{tab:my_label}
+\end{table}
+\begin{multicols}{2}
+\begin{enumerate}
+    \item P-6, Q-3, R-2, S-1
+    \item P-2, Q-6, R-4, S-5
+    \item P-4, Q-2, R-6, S-5
+    \item P-4, Q-6, R-1, S-5
+\end{enumerate}
+\end{multicols}
+
+\item Match the materials in \textbf{Column-I}with the descriptions in \textbf{Column-II}.
+\begin{table}[h]
+    \centering
+    \input{tables/table3.tex}
+    \label{tab:my_label}
+\end{table}
+\begin{multicols}{2}
+\begin{enumerate}
+    \item P-6, Q-5, R-2, S-1  
+    \item P-4, Q-5, R-2, S-1
+    \item P-4, Q-1, R-3, S-2 
+    \item P-6, Q-1, R-5, S-3
+\end{enumerate}
+\end{multicols}
+
+\item Match the materials in \textbf{Column-I}with the descriptions in \textbf{Column-II}.
+\begin{table}[h]
+    \centering
+    \input{tables/table4.tex}
+    \label{tab:my_label}
+\end{table}
+\begin{multicols}{2}
+\begin{enumerate}
+    \item P-6, Q-4, R-2, S-5
+    \item P-3, Q-5, R-1, S-4
+    \item P-3, Q-4, R-1, S-5
+    \item P-6, Q-5, R-1, S-4
+\end{enumerate}
+\end{multicols}
+
+\item It takes 4 h for carburising a steel at $900^{\circ}C $. If the same carburising is to be accomplished in 2 h, what should be the temperature? The activation energy of diffusion of carbon in the steel is 151 kJ mol$^{-1}$.
+\begin{multicols}{4}
+\begin{enumerate}
+    \item $850^{\circ}C$
+    \item $955^{\circ}C$
+    \item $1015^{\circ}C$
+    \item $1228^{\circ}C$
+\end{enumerate}
+\end{multicols}
+
+\item A steel specimen $\brak{12 \text{mm diameter and} 60 \text{mm length}}$ undergoes elastic deformation under tension. The deformed specimen experiences a longitudinal strain of 0.001. If the Poisson's ratio is 0.3, the diameter of the deformed specimen \brak{\text{in mm}} is 
+\begin{multicols}{4}
+\begin{enumerate}
+    \item 12.0120
+    \item 11.9964
+    \item 11.9964
+    \item 11.9880
+\end{enumerate}
+\end{multicols}
+
+\textbf{Common Data Questions}\\
+
+\textbf{Common Data for Questions 17 and 18:}\\
+ The first peak in the powder X-ray diffraction pattern of an FCC metal appears at a Bragg angle of $19.2^{\circ}$. The wavelength of Cu-K$_{\alpha}$ radiation used is 0.154 nm.\\
+\item The lattice parameter of the metal \brak{\text{in nm}} is
+\begin{enumerate}
+\begin{multicols}{4}
+    \item $ 0.4505$
+    \item $ 0.4055$
+    \item $ 0.3505$
+    \item $ 0.3055$
+    \end{multicols}
+\end{enumerate}
+
+
+\item The full width at half maximum \brak{\text{FWHM}} of the first peak is $0.35^{\circ}$.
+ Ignoring micro-strain and instrumental broadening, the crystallite size of the sample \brak{\text{in nm}} is 
+\begin{enumerate}
+\begin{multicols}{4}
+    \item 20
+    \item 24
+    \item 200
+    \item 240
+\end{multicols}
+\end{enumerate}
+
+\textbf{Common Data for Questions 19 and 20:}\\
+ For an intrinsic semiconductor, the mobilities of free electrons and holes are 0.14 m$^{2}$V$^{-1}$s$^{-1}$
+ and 0.038 m$^{2}$V$^{-1}$s$^{-1}$, respectively. Its bandgap is 1.107 eV and electrical conductivity at 300 K is $3.99 \times 10^{-4} \Omega ^{-1}m^{-1}$.  \\
+\item The free electron concentration \brak{\text{in m}^{-3}} at 300 K is
+\begin{enumerate}
+\begin{multicols}{4}
+    \item $ 13.99 \times 10^{15}$
+    \item $ 27.98 \times 10^{15}$
+    \item $ 13.99 \times 10^{17}$
+    \item $ 27.98 \times 10^{17}$
+\end{multicols}
+\end{enumerate}
+\item What is the temperature at which the conductivity of the semiconductor is $0.399 \Omega^{-1}\text{m}^{-1}$?
+\begin{multicols}{4}
+\begin{enumerate}
+    \item 343 K
+    \item 443 K
+    \item 493 K
+    \item 543 K
+\end{enumerate}
+\end{multicols}
+
+\textbf{Linked Answer Questions}\\
+\textbf{Statement for Linked Answers Questions 21 and 22:}\\
+A continuous and aligned glass fibre reinforced composite has a modulus of elasticity of 150 GPa in the longitudinal direction. The matrix is a polyester resin with a modulus of 4.5 GPa. The glass fibre has a modulus of 340 GPa.\\
+\item The volume fraction of the glass fibres is
+\begin{multicols}{4}
+\begin{enumerate}
+    \item $0.398$
+    \item $0.434$
+    \item $0.497$
+    \item $0.566$
+\end{enumerate}
+\end{multicols}
+\item If the cross-sectional area of the composite is 300
+ mm$^{2}$, and a stress of 100 MPa is applied in the longitudinal direction, what will be the total load \brak{\text{in kN}} carried by the glass fibres?  
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $0.5$
+    \item $5$
+    \item $20.5$
+    \item $29.5$
+\end{enumerate}
+\end{multicols}
+\end{enumerate}
+\end{document}
