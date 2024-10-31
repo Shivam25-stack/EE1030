@@ -1,0 +1,252 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{amsmath}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2019-ST-'14-26'}
+\author{EE24BTECH11057 - SHIVAM SHILVANT*
+}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+\begin{enumerate}
+
+
+\item A fair die is rolled two times 
+independently. Given that the outcome on the first roll is 1, the expected value of the sum of the two outcomes is:  
+
+\begin{multicols}{4}
+\begin{enumerate}
+    \item $4$
+    \item $4.5$
+    \item $3$
+    \item $5.5$
+\end{enumerate}
+\end{multicols}
+
+\item The dimension of the vector space of $7\times7$
+ real symmetric matrices with trace zero and the sum of the off-diagonal elements zero is:   .
+\begin{multicols}{4}
+\begin{enumerate}
+    \item 47
+    \item 28
+    \item 27
+    \item 26
+\end{enumerate}
+\end{multicols}
+
+\item Let A be a $6\times6$
+ complex matrix with $\text{A}^{3}\neq0$ and $\text{A}^{4}=0$. Then the number of Jordan blocks of A is:  
+
+\begin{multicols}{4}
+\begin{enumerate}
+    \item 1 or 6
+    \item 2 or 3
+    \item 4
+    \item 5
+\end{enumerate}
+\end{multicols}
+
+\item Let $X_{1}, ..., X_{n}$ be a random sample from a uniform distribution defined over $\brak{0,\theta}$, where $\theta>0$ and $n\geq2$. Let X\brak{1}=min$\cbrak{X_{1}, ..., X_{n}}$ and X\brak{n}=max$\cbrak{X_{1}, ..., X_{n}}$. Then the covariance between X\brak{n} and X\brak{1}/X\brak{n} is:
+\begin{multicols}{4}
+\begin{enumerate}
+    \item 0
+    \item $n\brak{n+1}\theta$
+    \item $n\theta$
+    \item $n^2\brak{n+1}\theta$
+\end{enumerate}
+\end{multicols}
+
+\item Let $X_{1}, ..., X_{n}$be a random sample drawn from a population with probability density function f\brak{x;\theta}=$\theta x^{\theta-1}, 0\leq x\leq1,\theta>0$. Then the maximum likelihood estimator of $\theta$ is:
+\begin{multicols}{4}
+\begin{enumerate}
+    \item $\frac{-n}{\sum_{i=1}^n \log_e {X_i}}$
+    \item $\frac{-\sum_{i=1}^n \log_e {X_i}}{n}$
+    \item $\brak{\Pi_{i=1}^n X_i}^{1/n}$
+    \item $\frac{\brak{\Pi_{i=0}^n X_i}}{n}$
+\end{enumerate}
+\end{multicols}
+
+\item Let $Y_i$ = $\beta_0+\beta_1x_{1i}+\beta_2x_{2i}+\epsilon_i$, for $i=1, ... ,10$, where $x_{1i}'s \ \text{and}\ x_{2i}'s$ are fixed covariates and $\epsilon_i$'s are uncorrelated random variables with mean 0 and unknown variance $\sigma^{2}$. Here $\beta_0,\ \beta_1,\ \text{and}\ \beta_2$ rare unknown parameteres. Further, define $\hat{Y_i} = \hat{\beta_0}  \ +\hat{\beta_1}x_{1i} \  +\hat{\beta_2}x_{2i}$, where $\brak{\hat{\beta_0},\hat{\beta_1},\hat{\beta_2}}$ is the unbiased least square estimator of $\brak{\beta_0,\beta_1,\beta_2}$. Then an unbiased estimator of $\sigma^2$ is
+\begin{multicols}{4}
+\begin{enumerate}
+    \item $\frac{\sum_{i=1}^10 \brak{Y_i-\hat{Y_i}}^2}{10}$
+    \item $\frac{\sum_{i=1}^10 \brak{Y_i-\hat{Y_i}}^2}{7}$
+    \item $\frac{\sum_{i=1}^10 \brak{Y_i-\hat{Y_i}}^2}{8}$
+    \item $\frac{\sum_{i=1}^10 \brak{Y_i-\hat{Y_i}}^2}{9}$
+\end{enumerate}
+\end{multicols}
+
+\item For $i = 1, 2, 3$, let $Y_{i} = \alpha + \beta x_{i} + \epsilon_{i}$, where $x_{i}$'s are fixed covariates, and $\epsilon_{i}$'s are independent and identically distributed standard normal random variables. Here, $\alpha$ and $\beta$ are unknown parameters. Given the following observation,
+\\
+\begin{table}[h]
+    \centering
+    \input{tables/table1.tex}
+    \label{tab:my_label}
+\end{table}
+the best linear unbiased estimate of $\alpha+\beta$ is equal to
+\begin{multicols}{4}
+\begin{enumerate}
+    \item 1.5
+    \item 1
+    \item 1.8
+    \item 2.1
+\end{enumerate}
+\end{multicols}
+
+\item\label{1} Consider a discrete time Markov chain on the space \cbrak{1,2,3} with one-step transition  \begin{figure}[!ht] \centering
+\resizebox{0.2\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\node [font=\normalsize] at (1,10.25) {\textbf{1}};
+\node [font=\normalsize] at (2,10.25) {\textbf{2}};
+\node [font=\normalsize] at (3,10.25) {\textbf{3}};
+\node [font=\normalsize] at (1,9.75) {\textbf{0.7}};
+\node [font=\normalsize] at (2,9.75) {\textbf{0.3}};
+\node [font=\normalsize] at (3,9.75) {\textbf{0}};
+\node [font=\normalsize] at (1,9.25) {\textbf{0}};
+\node [font=\normalsize] at (2,9.25) {\textbf{0.6}};
+\node [font=\normalsize] at (3,9.25) {\textbf{0.4}};
+\node [font=\normalsize] at (1,8.75) {\textbf{0}};
+\node [font=\normalsize] at (2,8.75) {\textbf{0}};
+\node [font=\normalsize] at (3,8.75) {\textbf{1}};
+\node [font=\normalsize] at (0.25,9.75) {\textbf{1}};
+\node [font=\normalsize] at (0.25,9.25) {\textbf{2}};
+\node [font=\normalsize] at (0.25,8.75) {\textbf{3}};
+\draw [ line width=0.9pt](3.25,10) to[short] (3.25,8.5);
+\draw [ line width=0.9pt](0.75,10) to[short] (0.75,8.5);
+\draw (0.75,8.5) to[short] (1,8.5);
+\draw (0.75,8.5) to[short] (1,8.5);
+\draw [ line width=0.5pt](0.75,8.5) to[short] (1.25,8.5);
+\draw [ line width=0.5pt](0.75,10) to[short] (1.25,10);
+\draw [ line width=0.5pt](2.75,10) to[short] (3.25,10);
+\draw [ line width=0.5pt](2.75,8.5) to[short] (3.25,8.5);
+\end{circuitikz}
+}%
+\label{fig{1}.1}
+\caption{Probablity matrix}
+\end{figure} probablity matrix. Which of the following statements is true ?
+\begin{enumerate}
+    \item States 1, 3 are recurrent and state 2 is transient.
+    \item State 3 is recurrent and states 1, 2 are transient.
+    \item States 1, 2, 3 are recurrent. 
+    \item States 1, 2 are recurrent and state 3 is transient.\\
+\end{enumerate}
+
+\item The minimal polynomial of the matrix
+$\myvec{1&1&2&0\\0&2&1&0\\0&0&1&0\\0&0&0&2\\}$ is
+\begin{enumerate}
+\begin{multicols}{4}
+    \item $\brak{x-1}\brak{x-2}$
+    \item $\brak{x-1}^2\brak{x-2}$
+    \item $\brak{x-1}\brak{x-2}^2$
+    \item $\brak{x-1}^2\brak{x-2}^2$
+\end{multicols}
+\end{enumerate}
+\newpage
+\item Let $\brak{X_1,X_2,X_3}$ be a trivariate normal random vector with mean vector $\brak{-3,1,4}$ and variance-covariance matrix $\myvec{4&0&0\\0&3&-3\\0&-3&4\\}$. Which of the following statements are true ?
+\begin{enumerate}
+\item $X_2$ and $X_3$ are independent.
+\item $X_1+X_3$ and $X_2$ are independent.
+\item $\brak{X_2,X_3}$ and $X_1$ are independent.
+\item $\frac{1}{2}\brak{X_2+X_3}$ and $X_1$ are independent.
+\end{enumerate}
+\begin{enumerate}
+\begin{multicols}{2}
+     \item \brak{i} and \brak{iii}
+     \item \brak{ii} and \brak{iii}
+     \item \brak{i} and \brak{iv}
+     \item \brak{iii} and \brak{iv}
+ \end{multicols}   
+\end{enumerate}
+\item A $2^3$ factorial experiment with factors $A,B$ and $C$ is arranged in  two blocks of four plots each as follows: \brak{\text{Below,} \brak{1} \text{denotes the treatment in which $A,B$, and $C$ are at the lower level, ac denotes the treatment in which $A$ and $C$ are at the higher level and $B$ is at the lower level, and so on.}}
+\begin{table}[h]
+    \centering
+    \input{tables/table2.tex}
+    \label{tab:my_label}
+\end{table}
+The treatment contrast that is confounded with the blocks is
+\begin{multicols}{4}
+\begin{enumerate}
+    \item $BC$
+    \item $AC$
+    \item $AB$
+    \item $ABC$
+\end{enumerate}
+\end{multicols}
+
+\item
+Consider a fixed effects two-way analysis of variance model $Y_{ijk}=\mu+\alpha_i+\beta_j+\gamma_{ij}+\epsilon_{ijk}$, where $i=1, ... ,a;j=1, ... ,b;k=1, .. ,r$ and $\epsilon_{ijk}$
+'s are independent and identically distributed normal random variables with zero mean and constant variance. Then the degrees of freedom available to estimate the error variance is zero when
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $a=1$
+    \item $b=1$
+    \item $r=1$
+    \item None of the above.
+\end{enumerate}
+\end{multicols}
+
+\item For $k=1,2, ... ,10$, let the probability density function of the random variable $X_k$ be\\
+
+\begin{center}
+$f_{X_k}=$
+$\begin{cases}
+\frac{e^{-\frac{x}{k}}}{k}, & x>0\\ 
+0, & \text{otherwise.}
+\end{cases}$\\
+\end{center}
+
+Then $E\brak{\Sigma_{k=1}^{10} k X_k}$ is equal to ...
+\end{enumerate}
+\end{document}
